@@ -1,0 +1,73 @@
+.task {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .task p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+
+.task_text {
+  color: black;
+}
+
+button {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #ec971f;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #d9534f;
+  color: white;
+  margin-left: 5px;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+  transform: scale(1.05);
+}
+
+.todo-button {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.todo-button:hover {
+  background-color: #4cae4c;
+  transform: scale(1.05);
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+  margin-left: 5px;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
