@@ -7,7 +7,7 @@ function App() {
   const [tasks, setTasks] = useState(() => {
     return JSON.parse(localStorage.getItem("tasks")) || [];
   });
-  const [editIndex, setEditIndex] = useState(null); // Track the index of the task being edited
+  const [editIndex, setEditIndex] = useState(null);
 
   useEffect(() => {
     const storedTasks = localStorage.getItem("tasks");
@@ -31,16 +31,16 @@ function App() {
     if (task.trim() === "") return;
 
     if (editIndex !== null) {
-      // If editing, update the task
+      
       const updatedTasks = tasks.map((t, i) => (i === editIndex ? task : t));
       setTasks(updatedTasks);
-      setEditIndex(null); // Reset edit state
+      setEditIndex(null);
     } else {
-      // If adding, append a new task
+      
       setTasks([...tasks, task]);
     }
 
-    setTask(""); // Clear the input field
+    setTask(""); 
   };
 
   const deleteTask = (index) => {
@@ -48,8 +48,8 @@ function App() {
   };
 
   const startEditTask = (index) => {
-    setTask(tasks[index]); // Set the task text in the input field
-    setEditIndex(index); // Track which task is being edited
+    setTask(tasks[index]);
+    setEditIndex(index); 
   };
 
   return (
